@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root {
+    --first-color: rgb(250, 20, 6);
+    --second-color: rgb(190, 210, 197);
+    --hover-color: rgb(209, 33, 24);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333;
+}
+
+h1{
+    margin-left: 10.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 40px;
+}
+
+
+.stopwatch{
+    margin-left: 11.6rem;
+    font-size: 42px;
+    font-family: 'Readex Pro', sans-serif;
+    color: var(--first-color);
+}
+
+
+
+.time{
+    visibility: hidden;
+    margin-left: 10.5rem;
+    font-family: 'Readex Pro', sans-serif;
+    color: var(--second-color);
+}
+
+.time-list{
+    margin-left: 13rem;
+    margin-top: 1rem;
+}
+
+.time-list li {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 22px;
+    color: var(--second-color);
+    margin-left: -8.5rem;
+    
+}
+
+.time-list:last-child{
+    margin-bottom: 2rem;
+}
+
+.wrapper{
+    position: relative;
+    width: 450px;
+    background: radial-gradient(circle, rgba(43,44,46,1) 0%, rgba(25,25,25,1) 93%);
+    color: #fff;
+    box-shadow: 0 0 10px #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.header i{
+    color: var(--second-color);
+}
+
+.header i:hover{
+    color: var(--first-color);
+}
+
+.color-icon{
+   margin-left: 25rem;
+   margin-top: 1rem;
+    
+}
+
+.bottom{
+    margin-left: 4.4rem;
+    margin-top: 1.5rem;
+}
+
+.bottom button{
+    margin-right: 0.8rem;
+    width: 65px;
+    height: 30px;
+    font-size: 15px;
+    background-color: transparent;
+    color: #fff;
+    border: solid var(--first-color);
+    border-radius: 5px;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.archive{
+    margin-top: 0.4rem;
+    margin-left: 4.4rem;
+    width: 310px;
+    height: 30px;
+    background-color: transparent;
+    color: #fff;
+    border: solid var(--first-color);
+    transition: background-color .3s;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+ button:hover{
+    background-color: var(--first-color);
+}
+
+button:focus {
+    background-color: var(--first-color);
+    
+}
+
+.popup{
+    background-color: royalblue;
+    font-family: 'Readex Pro', sans-serif;
+    position: absolute;
+    width: 380px;
+    height: 230px;
+    border-radius: 5px;
+    background-color: #333;
+    display: none;
+}
+
+.popup p{
+    color: #fff;
+}
+
+.popup h3{
+    color: #fff;
+    font-size: 25px;
+    padding: 0.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.popup strong{
+    color: var(--first-color);
+    margin-left: 3rem;
+}
+
+.popup i{
+     color: var(--first-color);
+    margin-left: 3rem;
+    
+}
+
+.close{
+    margin-left: 7rem;
+    margin-top: 1rem;
+    width: 115px;
+    height: 30px;
+    font-size: 15px;
+    background-color: transparent;
+    color: #fff;
+    border-color: var(--first-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* --------------------- */
+.colors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 80px;
+    width: 64px;
+    height: 120px;
+    transition: transform .3s;
+}
+
+.color {
+    width: 27px;
+    height: 27px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .5s, box-shadow .5s;
+    margin-left: 24.3rem;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+}
+
+.show-colors {
+    transform: translateX(-110px);
+}
+
+.one {
+    background-color: rgb(250, 20, 6);
+    box-shadow: 0 0 8px rgb(250, 20, 6);
+}
+
+.two {
+    background-color: rgb(6, 173, 250);
+    box-shadow: 0 0 8px rgb(6, 173, 250);
+}
+
+.three {
+    background-color: rgb(0, 255, 42);
+    box-shadow: 0 0 8px rgb(0, 255, 42);
+}
+
+.one:hover {
+    background-color: rgb(209, 33, 24);
+    box-shadow: 0 0 16px rgb(250, 20, 6);
+}
+
+.two:hover {
+    background-color: rgb(28, 145, 199);
+    box-shadow: 0 0 16px rgb(6, 173, 250);
+}
+
+.three:hover {
+    background-color: rgb(28, 209, 58);
+    box-shadow: 0 0 16px rgb(0, 255, 42);
+}
